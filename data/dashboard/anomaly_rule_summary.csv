@@ -1,0 +1,4 @@
+rule,flagged_rows,share_pct
+amount_robust_z_gt_4.0_customer_category,3098,0.6505642563449965
+customer_day_count_gt_median_plus_6_mad,6085,1.277819076778342
+any_rule,9148,1.9210335109890342

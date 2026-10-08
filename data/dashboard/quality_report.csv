@@ -1,0 +1,7 @@
+check,status,detail
+customers.customer_id,pass,"nulls=0, duplicate_values=0"
+accounts.account_id,pass,"nulls=0, duplicate_values=0"
+transactions.transaction_id,pass,"nulls=0, duplicate_values=0"
+accounts.customer_id -> customers.customer_id,pass,unmatched_values=0
+transactions.account_id -> accounts.account_id,pass,unmatched_values=0
+transactions.currency -> fx_rates,pass,"currencies=['EUR', 'GBP', 'USD'], unconverted_rows=0"
